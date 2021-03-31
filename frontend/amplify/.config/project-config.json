@@ -1,0 +1,17 @@
+{
+  "projectName": "BookmarkApp",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "src",
+      "DistributionDir": "public",
+      "BuildCommand": "gatsby build",
+      "StartCommand": "gatsby develop"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}

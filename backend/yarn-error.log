@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\star\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @aws-cdk/aws-lambda @aws-cdk/aws-cognito @aws-cdk/aws-dynamodb @aws-cdk/aws-events @aws-cdk/aws-events-target @aws-cdk/aws-s3 @aws-cdk/aws-s3-deployment @aws-cdk/aws-cloudfront
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\nodejs\;C:\Users\star\AppData\Local\Microsoft\WindowsApps;C:\Users\star\AppData\Local\Programs\Microsoft VS Code\bin;c:\Program Files\Amazon\AWSCLIV2\aws.exe;C:\Users\star\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@aws-cdk%2faws-events-target: Not found
+      at Request.params.callback [as _callback] (C:\Users\star\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\star\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Users\star\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Users\star\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "0.1.0",
+    "bin": {
+      "backend": "bin/backend.js"
+    },
+    "scripts": {
+      "build": "tsc",
+      "watch": "tsc -w",
+      "test": "jest",
+      "cdk": "cdk"
+    },
+    "devDependencies": {
+      "@aws-cdk/assert": "1.95.1",
+      "@types/jest": "^26.0.10",
+      "@types/node": "10.17.27",
+      "jest": "^26.4.2",
+      "ts-jest": "^26.2.0",
+      "aws-cdk": "1.95.1",
+      "ts-node": "^9.0.0",
+      "typescript": "~3.9.7"
+    },
+    "dependencies": {
+      "@aws-cdk/core": "1.95.1",
+      "source-map-support": "^0.5.16"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

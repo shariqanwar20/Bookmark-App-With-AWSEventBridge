@@ -1,0 +1,21 @@
+{
+    "version": "2018-05-29",
+    "method": "POST",
+    "resourcePath": "/",
+    "params": {
+        "headers": {
+        "content-type": "application/x-amz-json-1.1",
+        "x-amz-target":"AWSEvents.PutEvents"
+        },
+        "body": {
+            "Entries": [
+                {
+                    "Source": "appsync-add-event",
+                    "EventBusName": "default",
+                    "Detail": "{ \"title\" : \"$ctx.arguments.bookmark.title\", \"url\" : \"$ctx.arguments.bookmark.url\", \"user\" : \"$ctx.arguments.bookmark.user\"}",
+                    "DetailType": "add bookmark via graphql"
+                }
+            ]
+        }
+    }
+}

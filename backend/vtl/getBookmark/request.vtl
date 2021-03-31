@@ -1,0 +1,13 @@
+{
+    "version" : "2018-05-29",
+    "operation" : "Scan",
+    "filter" : {
+        "expression" : "#user = :user",
+        "expressionNames" : {
+            "#user" : "user",
+        },
+        "expressionValues" : {
+            ":user" : $util.dynamodb.toDynamoDBJson($context.arguments.user)
+        },
+    }
+}
